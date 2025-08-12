@@ -36,6 +36,14 @@ app.get('/users', (req, res) => {
   });
 });
 
+// GET endpoint - Get all users
+app.get('/helloworld', (req, res) => {
+  res.json({
+    success: true,
+    data: 'Hello World!'
+  });
+});
+
 // GET endpoint - Get user by ID
 app.get('/users/:id', (req, res) => {
   const id = parseInt(req.params.id);
